@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>University Finder/ Sign IN</title>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <link rel="stylesheet" href="css1/main1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script> -->
+  <!-- <script src= "js1/sample.js"></script>  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+   $(function () {/from   w ww .  ja va2 s  . c o  m/
+            var ctx = document.getElementById("chart1").getContext('2d');
+            var data = {
+                datasets: [{
+                    label: 'Graduate',
+                    data: [126516, 124888, 117960, 119828, 120332, 66082, 133674],
+                    backgroundColor: [
+                        '#3c8dbc',
+                        '#f56954',
+                        '#f39c12',
+                        '#f26c14',
+                        '#f67c78',
+                        '#f87dbc',
+                        '#f39c89'
+                    ],
+                }],
+                labels: [
+                    '2015',
+                    '2016',
+                    '2017',
+                    '2018',
+                    '2019',
+                    '2020',
+                    '2021'
+                ]
+            };
+            var myDoughnutChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12
+                        }
+                    }
+                }
+            });
+            var ctx_2 = document.getElementById("chart2").getContext('2d');
+            var data_2 = {
+                datasets: [{
+                    label: 'Undergraduate',
+                    data: [119262, 115841, 108539, 106881, 104907, 69183, 127896],
+                    backgroundColor: [
+                        '#3c8dbc',
+                        '#f56954',
+                        '#f39c12',
+                        '#f26c14',
+                        '#f67c78',
+                        '#f87dbc',
+                        '#f39c89'
+
+                    ],
+                }],
+                labels: [
+                    '2015',
+                    '2016',
+                    '2017',
+                    '2018',
+                    '2019',
+                    '2020',
+                    '2021'
+                ]
+            };
+            var myDoughnutChart_2 = new Chart(ctx_2, {
+                type: 'bar',
+                data: data_2,
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12
+                        }
+                    }
+                }
+            });
+            var ctx = document.getElementById("chart3").getContext('2d');
+            var data = {
+                datasets: [{
+                    data: [12360, 145658, 20613, 15402, 51101, 190590, 12914],
+                    backgroundColor: [
+                        '#3c8dbc',
+                        '#f56954',
+                        '#f39c12',
+                        '#f26c14',
+                        '#f67c78',
+                        '#f87dbc',
+                        '#f39c89'
+                    ],
+                }],
+                labels: [
+                    'Agriculture',
+                    'Business',
+                    'Communication',
+                    'Education',
+                    'FineArts',
+                    'Engineering',
+                    'Architecture'
+                ]
+            };
+            var myDoughnutChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12
+                        }
+                    }
+                }
+            });
+        });
+    
+      </script> 
+
+  </script>
+
+</head>
+
+<header class="header">
+
+  <a href="Temp1.html" class="logo"> <img src="img1/graduation.png" alt="logo" style="display: inline" /> University
+    <br>
+    Finder </a>
+
+
+  <nav class="navbar">
+    <a href="Temp1.html">Home</a>
+    <a href="Discover1.html">Discover</a>
+    <a href="Ranking1.html">Insight</a>
+    <a href="Blog1.html">Blogs</a>
+    <a href="AboutUs1.html">About US</a>
+    <button class="button b1"><a href="SignIn1.html">Sign In</a></button>
+  </nav>
+</header>
+
+<body>
+  <h1 >Number of admissions for graduate in US universities over time</h1>
+  <div class="chart-container">
+
+    <canvas id="chart1" width="240px" height="240px"></canvas>
+  </div>
+  <h1>Number of admissions for undergraduate in US universities over time</h1>
+  <div class="chart-container2">
+  
+    <canvas id="chart2" width="240px" height="240px"></canvas>
+  </div>
+  <h1>Number of students enrollment in different courses in 2021</h1>
+  <div class="chart-container3">
+  
+    <canvas id="chart3" width="240px" height="240px"></canvas>
+  </div>
+</body>
+<div class="footer">
+
+  <div class="box-container">
+
+    <div class="box">
+      <h3><img src="img1/graduation.png" alt="logo" style="display: inline" />University Finder </h3>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+      <p>There's never enough time to find the perfect university, coursework, and tuition fee while navigating the
+        traffic on the way home when
+        one lives in a metropolis. Why don't we take care of everything mentioned above for you? Students can find the
+        the educational program that is the perfect
+        fit for them by using the University finder's extensive online college search guide. Be it either two or four
+        years, Graduate
+        or undergraduate, degree online or a certificate
+        the program, we have them all. We'll assist you in weighing your alternatives and provide guidance on the
+        perplexing college application procedure.
+
+      </p>
+
+    </div>
+
+  </div>
+  <div class="box-container">
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +8137291612 </a>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +8134042614 </a>
+      <a href="#" class="links"> <i class="fas fa-envelope"></i> svkm777@gmail.com </a>
+      <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> USF Tampa, FL 33613 </a>
+    </div>
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="Temp1.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+      <a href="Discover1.html" class="links"> <i class="fas fa-arrow-right"></i> Discover </a>
+      <a href="Ranking1.html" class="links"> <i class="fas fa-arrow-right"></i> Ranking </a>
+      <a href="Blog1.html" class="links"> <i class="fas fa-arrow-right"></i> Blogs </a>
+      <a href="AboutUs1.html" class="links"> <i class="fas fa-arrow-right"></i> About US </a>
+    </div>
+
+    <div class="box">
+      <h3>newsletter</h3>
+      <p>subscribe for latest updates</p>
+      <input type="email" placeholder="your email" class="email">
+      <input type="submit" value="subscribe" class="btn">
+      <img src="img1/payments.png" class="payment-img" alt="">
+    </div>
+
+  </div>
+
+  <div class="credit"> created by <span> Group2 SVKM </span> | all rights reserved </div>
+
+  </section>
+</div>
+
+
+
+</html>
